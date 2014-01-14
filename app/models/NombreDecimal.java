@@ -15,7 +15,10 @@ public class NombreDecimal {
     public String en_romain() {
 		if(valeur==1){
 			return "I";
-		}	
+		}
+		if(valeur==2){
+			return "II";
+		}		
 		else{
 			return "";
 		}		
