@@ -14,12 +14,13 @@ public class NombreDecimal {
 
     public String en_romain() {
 		
-		String[] chiffresRomain = new String[5];
+		String[] chiffresRomain = new String[6];
 		chiffresRomain[0]="";
 		chiffresRomain[1]="I";
 		chiffresRomain[2]="II";
 		chiffresRomain[3]="III";
-		chiffresRomain[4]="IV";			
+		chiffresRomain[4]="IV";	
+		chiffresRomain[5]="V";				
 		
 		return chiffresRomain[valeur];			
     }
