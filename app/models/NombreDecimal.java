@@ -25,4 +25,11 @@ public class NombreDecimal {
 		
 		return chiffresRomain[valeur];			
     }
+    
+    static String[] table_unites = {
+		"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+    
+    String en_romain_unites(int n){
+		return table_unites[n];
+	}	
 }

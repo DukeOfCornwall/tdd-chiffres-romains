@@ -32,6 +32,10 @@ public class ApplicationTest {
     void assert_en_romain(int d, String r) {
 	assertThat(new NombreDecimal(d).en_romain()).isEqualTo(r);
     }
+    
+    void assert_en_decimal(String r, int d){
+	assertThat(new String(r).en_decimal()).isEqualTo(d);
+	}	
 
     @Test
     public void romain_unites() {
@@ -41,6 +45,11 @@ public class ApplicationTest {
 	assert_en_romain(3,"III");
 	assert_en_romain(4,"IV");
 	assert_en_romain(5,"V");
-	assert_en_romain(6,"VI");							
+	assert_en_romain(6,"VI");
+	assert_en_romain(9,"IX");						
     }
+    
+    public void decimal_unites(){
+	assert_en_decimal("",0);
+	}	
 }
